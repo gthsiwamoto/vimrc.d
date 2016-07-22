@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remove vimrc
-if [ -f ~/.vimrc -o -L ~/.vimrc]; then
+if [ -f ~/.vimrc -o -L ~/.vimrc ]; then
   rm -f ~/.vimrc
 fi
 
