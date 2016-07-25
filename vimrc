@@ -102,6 +102,7 @@ NeoBundleCheck
 call neobundle#end()
 
 set cindent
+set encoding=utf-8
 filetype plugin indent on
 colorscheme twilight
 syntax on
