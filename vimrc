@@ -21,6 +21,7 @@ set incsearch
 set backspace=indent,eol,start
 set ruler
 set noswapfile
+set nobackup
 
 " NeoBundle
 set nocompatible
