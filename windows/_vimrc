@@ -1,0 +1,8 @@
+if filereadable($HOME . '/vimrc.d/vimrc')
+  source $HOME/vimrc.d/vimrc
+endif
+
+set encoding=utf-8
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim

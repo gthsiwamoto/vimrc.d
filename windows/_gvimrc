@@ -1,0 +1,3 @@
+colorscheme twilight
+cd $HOME
+au GUIEnter * simalt ~x

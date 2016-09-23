@@ -22,6 +22,7 @@ set backspace=indent,eol,start
 set ruler
 set noswapfile
 set nobackup
+set noundofile
 
 " NeoBundle
 set nocompatible
