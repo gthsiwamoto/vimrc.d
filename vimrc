@@ -23,6 +23,14 @@ set ruler
 set noswapfile
 set nobackup
 set noundofile
+set conceallevel=2
+set foldmethod=indent
+set foldlevel=0
+set foldcolumn=3
+
+autocmd BufEnter *.txt set guifont=MS_Gothic:h16:cSHIFTJIS
+autocmd BufEnter *.md set guifont=MS_Gothic:h16:cSHIFTJIS
+autocmd QuickFixCmdPost *grep* cwindow
 
 " NeoBundle
 set nocompatible
@@ -34,6 +42,12 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
+
+" vimproc
+NeoBundle 'Shougo/vimproc'
+
+" vimshell
+NeoBundle 'Shougo/vimshell.vim'
 
 " Unite
 NeoBundle 'Shougo/unite.vim'
@@ -94,8 +108,13 @@ NeoBundle 'bronson/vim-trailing-whitespace'
 " vim-markdown
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'plasticboy/vim-markdown'
-let g:vim_markdown_folding_level = 6
 let g:vim_markdown_new_list_item_indent = 0
+let g:vim_markdown_folding_level = 0
+"let g:vim_markdown_folding_disabled = 1
+
+NeoBundle 'kchmck/vim-coffee-script'
+au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
+
 
 " twilight
 NeoBundle 'vim-scripts/twilight'
