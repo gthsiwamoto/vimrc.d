@@ -119,11 +119,14 @@ au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
 " twilight
 NeoBundle 'vim-scripts/twilight'
 
+" molokai
+NeoBundle 'tomasr/molokai'
+
 NeoBundleCheck
 call neobundle#end()
 
 set cindent
 set encoding=utf-8
 filetype plugin indent on
-colorscheme twilight
+colorscheme molokai
 syntax on
