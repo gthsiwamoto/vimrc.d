@@ -27,6 +27,7 @@ set conceallevel=2
 set foldmethod=indent
 set foldlevel=0
 set foldcolumn=3
+set t_Co=256
 
 autocmd BufEnter *.txt set guifont=MS_Gothic:h16:cSHIFTJIS
 autocmd BufEnter *.md set guifont=MS_Gothic:h16:cSHIFTJIS
