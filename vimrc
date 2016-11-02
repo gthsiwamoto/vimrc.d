@@ -45,10 +45,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 " vimproc
-NeoBundle 'Shougo/vimproc'
+"NeoBundle 'Shougo/vimproc'
 
 " vimshell
-NeoBundle 'Shougo/vimshell.vim'
+"NeoBundle 'Shougo/vimshell.vim'
 
 " Unite
 NeoBundle 'Shougo/unite.vim'
