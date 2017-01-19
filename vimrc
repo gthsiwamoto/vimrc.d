@@ -23,10 +23,10 @@ set ruler
 set noswapfile
 set nobackup
 set noundofile
-set conceallevel=2
-set foldmethod=indent
-set foldlevel=0
-set foldcolumn=3
+"set conceallevel=2
+"set foldmethod=indent
+"set foldlevel=0
+"set foldcolumn=3
 set t_Co=256
 
 autocmd BufEnter *.txt set guifont=MS_Gothic:h16:cSHIFTJIS
@@ -43,29 +43,6 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
-
-" vimproc
-"NeoBundle 'Shougo/vimproc'
-
-" vimshell
-"NeoBundle 'Shougo/vimshell.vim'
-
-" Unite
-NeoBundle 'Shougo/unite.vim'
-NeoBundle 'Shougo/neomru.vim'
-let g:unite_enable_start_insert=1
-let g:unite_source_history_yank_enable =1
-let g:unite_source_file_mru_limit = 200
-nnoremap <silent> ,uy :<C-u>Unite history/yank<CR>
-nnoremap <silent> ,ub :<C-u>Unite buffer<CR>
-nnoremap <silent> ,uf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> ,ur :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <silent> ,uu :<C-u>Unite file_mru buffer<CR>
-
-" NerdTree
-NeoBundle 'scrooloose/nerdtree'
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
-let NERDTreeShowHidden = 1
 
 " neocomplcache
 NeoBundle 'Shougo/neocomplcache.vim'
@@ -106,19 +83,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 " vim-trailing-whitespace
 NeoBundle 'bronson/vim-trailing-whitespace'
 
-" vim-markdown
-NeoBundle 'godlygeek/tabular'
-NeoBundle 'plasticboy/vim-markdown'
-let g:vim_markdown_new_list_item_indent = 0
-let g:vim_markdown_folding_level = 0
-"let g:vim_markdown_folding_disabled = 1
-
 NeoBundle 'kchmck/vim-coffee-script'
 au BufRead,BufNewFile,BufReadPre *.coffee set filetype=coffee
-
-
-" twilight
-NeoBundle 'vim-scripts/twilight'
 
 " molokai
 NeoBundle 'tomasr/molokai'
