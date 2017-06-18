@@ -44,6 +44,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
+" NerdTree
+NeoBundle 'scrooloose/nerdtree'
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+let NERDTreeShowHidden = 1
+
 " neocomplcache
 NeoBundle 'Shougo/neocomplcache.vim'
 " Disable AutoComplPop
